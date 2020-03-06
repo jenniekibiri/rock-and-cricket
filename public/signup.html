@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+   
+</head>
+<body>
+   <form action="data"  method="POST"  onsubmit="onSubmit();">
+
+    <div class="row " >
+        <div class="col s12 m8 l4 offset-m2 offset-l4">
+            <div class="card grey darken-4 white-text">
+    
+                
+                <div class="card-action grey darken-4 ">
+                    <h5 style="color:rgb(196, 21, 82);"> Sign-up here!</h5>
+                </div>
+    
+                <div class="card-content">
+                    <div class="form-field " >
+                        <label for="username">username</label>
+                        <input type="text" id="username" required name="username" class=" white-text">
+                    </div>
+                 
+                    <div class="form-field">
+                        <label for="password">email</label>
+                        <input type="email" id="email" required name="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Role</label>
+                        <input type="text" id="job_role" required name="job_role">
+                    </div><br>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required name="password">
+                    </div><br>
+    
+                    
+                    <div class="form-field">
+                        <button class="btn-large waves-effect waves-dark    pink darken-3" style="width:100%;  font-family:Arial, Helvetica, sans-serif;" >SignUp</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div></form>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script >
+
+         function onSubmit(e){
+             e.preventDefault();
+         }
+      </script>
+</body>
+</html>
